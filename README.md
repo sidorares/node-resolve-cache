@@ -31,7 +31,7 @@ npm install --save resolve-cache
 At the beginning of your script insert
 
 ```js
-   require('resolve-cache')(__dirname + '/resolve-cache.json')¬
+   require('resolve-cache')(__dirname + '/resolve-cache.json');
 ```
 
 Uou can use any name instead of `resolve-cache.json`. If this file exist, it's data is used for name resolution. If it does not exist, all resolved names are dubped to it  on process exit. To refresh cache just delete this file and it'll be regenerated.
