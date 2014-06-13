@@ -16,7 +16,7 @@ requiring package:
   - if not found, repeat in all parent folders up to root.
   - if not found, search in all NODE_PATH paths
 
-Which all often adds up as tousands os syscalls, exceptions and startup time milliseconds. (Exceptions part also not very nice because it makes harder to use `breakOnException` debugger commmand - you need to skip all requires as most of them thow exceptions internally)
+Which all often adds up as thousands os syscalls, exceptions and startup time milliseconds. (Exceptions part also not very nice because it makes harder to use `breakOnException` debugger commmand - you need to skip all requires as most of them thow exceptions internally)
 
 This module allows you to save all results of this lookup process and re-use it for later restarts.
 
