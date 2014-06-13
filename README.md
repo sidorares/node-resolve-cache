@@ -50,4 +50,4 @@ There is no easy way to efficiently check at runtime if cached data is still rel
 - if you decide to refactor 'foo.js' into 'foo' folder + 'foo/index.js' you need to clean resolve cache.
 
 ### See also:
-  - [https://github.com/jaguard/time-require](time-require) - profile reuire time
+  - [time-require](https://github.com/jaguard/time-require) - profile require time
