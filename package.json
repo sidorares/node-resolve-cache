@@ -1,0 +1,22 @@
+{
+  "name": "resolve-cache",
+  "version": "0.0.1",
+  "description": "Cache and reuse results of node module file name resolution algorithms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sidorares/node-resolve-cache"
+  },
+  "keywords": [
+    "module",
+    "performance",
+    "startup",
+    "time",
+    "require"
+  ],
+  "author": "Andrey Sidorov <sidorares@yandex.ru>",
+  "license": "MIT"
+}
