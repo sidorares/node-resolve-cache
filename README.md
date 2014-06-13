@@ -18,7 +18,7 @@ requiring package:
 
 Which all often adds up as tousands os syscalls, exceptions and startup time milliseconds. (Exceptions part also not very nice because it makes harder to use `breakOnException` debugger commmand - you need to skip all requires as most of them thow exceptions internally)
 
-This module allow you to save all results of this lookup process and re-use it on later restarts.
+This module allows you to save all results of this lookup process and re-use it for later restarts.
 
 ### Usage
 
@@ -30,7 +30,7 @@ npm install --save resolve-cache
 
 At the beginning of your script insert
 
-```
+```js
    require('resolve-cache')(__dirname + '/resolve-cache.json')¬
 ```
 
@@ -40,7 +40,7 @@ Uou can use any name instead of `resolve-cache.json`. If this file exist, it's d
 
 There is no easy way to efficiently check at runtime if cached data is still relevant. If you move your files AND use them under same name you should refresh cache. Example:
 
-```
+```js
    var a = require('./foo');
 
    // ./foo.js:
