@@ -12,11 +12,11 @@ requiring module: (name starts with '/' or '.'):
 
 requiring package:
   - try to read and parse `node_modules/package.json` (sometimes large, due to included README)
-  - try to locate main script. Repead all steps as in 'require module'
+  - try to locate main script. Repeat all steps as in 'require module'
   - if not found, repeat in all parent folders up to root.
   - if not found, search in all NODE_PATH paths
 
-Which all often adds up as thousands os syscalls, exceptions and startup time milliseconds. (Exceptions part also not very nice because it makes harder to use `breakOnException` debugger commmand - you need to skip all requires as most of them thow exceptions internally)
+Which all often adds up as thousands of syscalls, exceptions and startup time milliseconds. (Exceptions part also not very nice because it makes harder to use `breakOnException` debugger commmand - you need to skip all requires as most of them thow exceptions internally)
 
 This module allows you to save all results of this lookup process and re-use it for later restarts.
 
