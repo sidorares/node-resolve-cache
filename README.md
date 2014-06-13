@@ -4,7 +4,7 @@ node-resolve-cache
 Cache and reuse results of node module file name resolution algorithm
 
 In node.js, when you require 'name' a lot of things happens under the hood.
-If you have lots of modules, file name resolution itlelf adds quite a lot of time.
+If you have lots of modules, file name resolution itself adds quite a lot of time.
 
 requiring module: (name starts with '/' or '.'):
   - try to open name. Try to open name + all registered extensions (js, .node, json, .coffee etc).
