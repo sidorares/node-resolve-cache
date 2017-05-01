@@ -1,6 +1,8 @@
 node-resolve-cache
 ==================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sidorares/node-resolve-cache.svg)](https://greenkeeper.io/)
+
 Cache and reuse results of node module file name resolution algorithm
 
 In node.js, when you require 'name' a lot of things happens under the hood.
